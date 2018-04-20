@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Data Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container-fluid">
+  <nav class="navbar">
+    
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+      </div>
+      
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="temp.html">Max Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="cloudiness.html">Cloudiness</a></li>
+              <li><a href="wind.html">Wind Speed</a></li>
+            </ul>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <!-- /.container-fluid -->
+  </div>
+
+<div class="container-fluid">
+  <div class="row justify-content-around">
+    <div class="col-md-7" >
+        <div class="first-panel">
+        <div class="panel panel-info">
+        <div class="panel-heading">Latitude vs. X</div>
+        <div class="panel-body">
+                <hr>
+                <img class ="home-image" src="output_data/temp.png" >
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                </p>
+                <p>After assembling this dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
+                    we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and
+                    visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                </p>
+        </div>        
+        </div>
+    </div>
+    </div>
+    <div class="col-md-4" >
+        <div class="second-panel">
+        <div class="panel panel-info">
+        <div class="panel-heading">Visualizations</div>
+        <div class="panel-body">
+            <div class="row">
+                <a href="temp.html"><img class ="home-image-2" src="output_data/temp.png" ></a>
+                <a href="humidity.html"><img class ="home-image-2" src="output_data/humidity.png" ></a>
+            </div>
+            <div class="row">
+                <a href="cloudiness.html"><img class ="home-image-2" src="output_data/cloudiness.png" ></a>
+                <a href="wind.html"><img class ="home-image-2" src="output_data/wind.png" ></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+      <div class="container">
+        <p>&copy; Copyright Data Analytics Bootcamp 2018</p>  
+      </div>  
+</footer>
+
+
+
+</body>
+
+</html>
